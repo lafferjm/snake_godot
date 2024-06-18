@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://d0o3qojxa5moo" path="res://sprites/food.png" id="1_1xvq5"]
 [ext_resource type="Script" path="res://scripts/food.gd" id="1_hdfmy"]
-[ext_resource type="AudioStream" uid="uid://n3006xyd2xcs" path="res://sound_effects/crunch.7.ogg" id="3_fqel5"]
+[ext_resource type="AudioStream" uid="uid://bxhqitscgd8aj" path="res://sound_effects/crunch.7.wav" id="3_kfhni"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ovu8c"]
 
@@ -19,6 +19,6 @@ texture = ExtResource("1_1xvq5")
 shape = SubResource("RectangleShape2D_ovu8c")
 
 [node name="Crunch" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("3_fqel5")
+stream = ExtResource("3_kfhni")
 
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
