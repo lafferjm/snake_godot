@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://dbpwnotmqk7ko"]
+
+[node name="Hud" type="CanvasLayer"]
+
+[node name="ScoreLabel" type="Label" parent="."]
+offset_left = 5.0
+offset_right = 105.0
+offset_bottom = 34.0
+theme_override_font_sizes/font_size = 24
+text = "Points: 0"
+vertical_alignment = 1
