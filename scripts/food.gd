@@ -7,9 +7,6 @@ func spawn():
 	var x_coord = rng.randi_range(0, screen_size.x / 20 - 20);
 	var y_coord = rng.randi_range(0, screen_size.y / 20 - 20);
 	
-	print(x_coord);
-	print(y_coord);
-	
 	position.x = x_coord * 20 + 10;
 	position.y = y_coord * 20 + 10;	
 
@@ -24,4 +21,5 @@ func _process(delta):
 
 
 func _on_area_2d_area_entered(area):
+	print(area.get_owner());
 	spawn();

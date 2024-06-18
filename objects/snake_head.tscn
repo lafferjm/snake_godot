@@ -6,7 +6,7 @@
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0e487"]
 
-[node name="Node2D" type="Node2D"]
+[node name="SnakeHead" type="Node2D"]
 script = ExtResource("1_r1b3m")
 snake_body_scene = ExtResource("2_owcon")
 metadata/_edit_group_ = true
@@ -15,6 +15,7 @@ metadata/_edit_group_ = true
 texture = ExtResource("1_ummci")
 
 [node name="Area2D" type="Area2D" parent="."]
+collision_mask = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource("RectangleShape2D_0e487")
