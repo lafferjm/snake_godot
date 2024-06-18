@@ -52,3 +52,10 @@ func _process(delta):
 
 	position.x += x_direction;
 	position.y += y_direction;
+
+func _grow_snake():
+	var tail = body_segments.back();
+	var new_tail = tail.duplicate();
+	add_child(new_tail);
+	body_segments.push_back(new_tail);
+

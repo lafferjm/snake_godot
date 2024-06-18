@@ -10,3 +10,5 @@ position = Vector2(84, 69)
 
 [node name="Food" parent="." instance=ExtResource("3_pklpk")]
 position = Vector2(141, 204)
+
+[connection signal="eaten" from="Food" to="SnakeHead" method="_grow_snake"]
