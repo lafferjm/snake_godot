@@ -56,6 +56,6 @@ func _process(delta):
 func _grow_snake():
 	var tail = body_segments.back();
 	var new_tail = tail.duplicate();
-	add_child(new_tail);
+	call_deferred("add_child", new_tail);
 	body_segments.push_back(new_tail);
 
