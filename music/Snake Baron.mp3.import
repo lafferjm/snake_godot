@@ -12,7 +12,7 @@ dest_files=["res://.godot/imported/Snake Baron.mp3-cf84b56aa480899620d57f4059f19
 
 [params]
 
-loop=false
+loop=true
 loop_offset=0
 bpm=0
 beat_count=0
