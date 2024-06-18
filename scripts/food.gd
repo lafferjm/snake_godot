@@ -2,6 +2,8 @@ extends Node2D
 
 var rng = RandomNumberGenerator.new();
 
+signal eaten;
+
 func spawn():
 	var screen_size = get_viewport_rect().size;
 	var x_coord = rng.randi_range(0, screen_size.x / 20 - 20);
@@ -21,5 +23,5 @@ func _process(delta):
 
 
 func _on_area_2d_area_entered(area):
-	print(area.get_owner());
+	eaten.emit();
 	spawn();
