@@ -4,11 +4,14 @@ var rng = RandomNumberGenerator.new();
 
 func spawn():
 	var screen_size = get_viewport_rect().size;
-	var x_coord = rng.randi_range(0, screen_size.x / 20);
-	var y_coord = rng.randi_range(0, screen_size.y / 20);
+	var x_coord = rng.randi_range(0, screen_size.x / 20 - 20);
+	var y_coord = rng.randi_range(0, screen_size.y / 20 - 20);
 	
-	position.x = x_coord * 20;
-	position.y = y_coord * 20;	
+	print(x_coord);
+	print(y_coord);
+	
+	position.x = x_coord * 20 + 10;
+	position.y = y_coord * 20 + 10;	
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
