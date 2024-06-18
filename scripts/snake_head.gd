@@ -27,19 +27,19 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	if Input.is_action_just_pressed("move_right"):
+	if Input.is_action_just_pressed("move_right") && x_direction != -20:
 		x_direction = 20;
 		y_direction = 0;
 
-	if Input.is_action_just_pressed("move_left"):
+	if Input.is_action_just_pressed("move_left") && x_direction != 20:
 		x_direction = -20;
 		y_direction = 0;
 		
-	if Input.is_action_just_pressed("move_up"):
+	if Input.is_action_just_pressed("move_up") && y_direction != 20:
 		x_direction = 0;
 		y_direction = -20;
 		
-	if Input.is_action_just_pressed("move_down"):
+	if Input.is_action_just_pressed("move_down") && y_direction != -20:
 		x_direction = 0;
 		y_direction = 20;
 	
