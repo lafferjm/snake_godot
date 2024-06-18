@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://chgi3ja2el4si"
+path="res://.godot/imported/Snake Baron.mp3-cf84b56aa480899620d57f4059f190aa.mp3str"
+
+[deps]
+
+source_file="res://music/Snake Baron.mp3"
+dest_files=["res://.godot/imported/Snake Baron.mp3-cf84b56aa480899620d57f4059f190aa.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
