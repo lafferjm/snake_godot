@@ -12,10 +12,13 @@ metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_1xvq5")
+centered = false
 
 [node name="Area2D" type="Area2D" parent="."]
+collision_mask = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(10, 10)
 shape = SubResource("RectangleShape2D_ovu8c")
 
 [node name="Crunch" type="AudioStreamPlayer" parent="."]

@@ -13,9 +13,11 @@ metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_ummci")
+centered = false
 
-[node name="Area2D" type="Area2D" parent="."]
-collision_mask = 3
+[node name="Area2D" type="Area2D" parent="." groups=["SnakeHead"]]
+collision_mask = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(10, 10)
 shape = SubResource("RectangleShape2D_0e487")
